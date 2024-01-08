@@ -78,25 +78,25 @@
         <h1>Marksheet for Informational Technology</h1>
         <p>Enter Marks</p>
         <label for="Clanguage">1. C language :</label>
-        <input type="number" name="first" id="first">
+        <input type="text" name="first" id="first">
 
         <label for="C++language">2. C++ language :</label>
-        <input type="number" name="second" id="second">
+        <input type="text" name="second" id="second">
 
         <label for="Database">3. Database :</label>
-        <input type="number" name="third" id="third">
+        <input type="text" name="third" id="third">
 
         <label for="HTML">4. HTML :</label>
-        <input type="number" name="four" id="four">
+        <input type="text" name="four" id="four">
 
         <label for="CSS">5. CSS :</label>
-        <input type="number" name="five" id="five">
+        <input type="text" name="five" id="five">
 
         <label for="php">6. php :</label>
-        <input type="number" name="six" id="six">
+        <input type="text" name="six" id="six">
 
         <label for="CoreJava">7. Core Java :</label>
-        <input type="number" name="seven" id="seven">
+        <input type="text" name="seven" id="seven">
         <br>
         <br>
 
@@ -123,7 +123,7 @@
 
             total = total*100 / 350
             console.log(total);
-            document.getElementById("para-2").innerText = total;
+            document.getElementById("para-2").innerText = total.toFixed();
         }
     </script>
 </body>
