@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment-5-JQuery</title>
+</head>
+<style>
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  tr {
+    text-align: center;
+  }
+
+  th {
+    background-color: rgb(208, 207, 207);
+  }
+
+  td {
+    background-color: rgb(241, 239, 239);
+  }
+</style>
+
+<body>
+  <h1 style="text-align: center">Web Designing Assignment</h1>
+  <h2 style="text-align: center">
+    Module (JQuery Basic, Effects & Advanced) – 5
+  </h2>
+  <br />
+  <br />
+
+  <h3>1. What is jQuery?</h3>
+  <ul>
+    <li>
+      <p>jQuery is a lightweight, "write less, do more", JavaScript library.</p>
+    </li>
+    <li>
+      <p>The jQuery library contains the following features:
+
+      <ul>
+        <li>HTML/DOM manipulation</li>
+        <li>CSS manipulation</li>
+        <li>HTML event methods</li>
+        <li>Effects and animations</li>
+      </ul>
+
+      </p>
+    </li>
+  </ul>
+  <br>
+
+
+  <h3>2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?</h3>
+  <ul>
+    <li>
+      <h4>How to Apply CSS Using JQuery :</h4>
+      <ul>
+        <li>
+          <p>The css() method sets one or more style properties for the selected elements.</p>
+        </li>
+        <li>
+          <p>Syntax : $("selector").css({"property-1": "value-1",
+            "property-2": "value-2"});</p>
+        </li>
+        <li>
+          <p>Example : <br>
+            &lt;script&gt; <br>
+            $(document).ready(function(){ <br>
+            $("button").click(function(){ <br>
+            $("p").css({"background-color": "yellow", "font-size": "200%"}); <br>
+            }); <br>
+            }); <br>
+            &lt;/script&gt;
+          </p>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <h4>How to Add Class and Remove Class in Jquery</h4>
+      <ul>
+        <li>
+          <p><b>addClass()</b> - Adds one or more classes to the selected elements.</p>
+        </li>
+        <li>
+          <p><b>removeClass()</b> - Removes one or more classes from the selected elements.</p>
+        </li>
+        <li>
+          <p><b>toggleClass()</b> - Toggles between adding/removing classes from the selected elements.</p>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <h4>JQuery Animation :</h4>
+      <table BORDER="2" ALIGN="center" width="80%" cellspacing="0" cellpadding="8">
+        <tr>
+          <th width="20%">JQuery Effects</th>
+          <th width="30%">Syntax</th>
+          <th width="30%">Description</th>
+        </tr>
+        <tr>
+          <td>hide()</td>
+          <td>$(selector).hide(speed, callback);</td>
+          <td>Hide elements</td>
+        </tr>
+        <tr>
+          <td>show()</td>
+          <td>$(selector).show(speed, callback);</td>
+          <td>Show elements</td>
+        </tr>
+        <tr>
+          <td>toggle()</td>
+          <td>$(selector).toggle(speed, callback);</td>
+          <td>Display hidden element or hide visible element</td>
+        </tr>
+        <tr>
+          <td>fadeIn()</td>
+          <td>$(selector).fadeIn(speed, callback);</td>
+          <td>Fade in a hidden element.</td>
+        </tr>
+        <tr>
+          <td>fadeOut()</td>
+          <td>$(selector).fadeOut(speed, callback);</td>
+          <td>Fade in a visible element.</td>
+        </tr>
+        <tr>
+          <td>fadeTo()</td>
+          <td>$(selector).fadeTo(speed, callback);</td>
+          <td>Fading to a given opacity (value between 0 and 1)</td>
+        </tr>
+        <tr>
+          <td>fadeToggle()</td>
+          <td>$(selector).fadeToggle(speed, callback);</td>
+          <td>Display or hide the specified element by animating their opacity</td>
+        </tr>
+        <tr>
+          <td>slideDown()</td>
+          <td>$(selector).slideDown(speed, callback);</td>
+          <td>Slide down an element</td>
+        </tr>
+        <tr>
+          <td>slideUp()</td>
+          <td>$(selector).slideUp(speed, callback);</td>
+          <td>Slide up an element</td>
+        </tr>
+        <tr>
+          <td>slideToggle()</td>
+          <td>$(selector).slideToggle(speed, callback);</td>
+          <td>Toggle slide</td>
+        </tr>
+        <tr>
+          <td>animate()</td>
+          <td>$(selector).animate(speed, callback);</td>
+          <td>Create custom animations</td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+  <br>
+</body>
+
+</html>
