@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubbling-Tickling </title>
+  </head>
+  <body>
+
+    <div class="great-great-grand-parent">
+      body (great-great-grand-parent)
+      <div class="great-grand-parent">
+        div (great-grand-parent)
+        <div class="grand-parent">
+          ul (grand-parent)
+          <div class="direct-parent">
+            li (direct-parent)
+            <div class="span">span</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+
+    <script>
+        $("*").css({
+          margin: "30px",
+          fontSize: "20px"
+        });
+      </script>
+
+    <script>
+        $(document).ready(function ()  {
+
+
+        $('html').find('.span').css({border: '2px solid grey', color: 'grey'})
+        $('.span').parent().css({border: '2px solid red', color: 'red'})
+        $('.direct-parent').parent().css({border: '2px solid red', color: 'red'})
+        $('.grand-parent').parent().css({border: '2px solid red', color: 'red'})
+        $('.great-grand-parent').parent().css({border: '2px solid red', color: 'red'})
+        $('.great-great-grand-parent').parent().css({border: '2px solid red', color: 'red'})
+    })
+    </script>
+  </body>
+</html>
