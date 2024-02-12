@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment-6-Example</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+        .card-img-top {
+            width: 80%;
+            height: 230px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .carousel-item img {
+            height: 600px;
+            opacity: 0.5;
+        }
+
+        .carousel-caption {
+            color: rgb(220, 20, 60);
+            font-weight: 600;
+        }
+       
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/img-9.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1">One more for good measure</h5>
+              <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eius consequatur porro quo nesciunt dicta provident sed expedita blanditiis illum!</p>
+              <a href="#" class="btn btn-danger">Browse Gallery</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/img-10.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1">One more for good measure</h5>
+              <p class="fs-6">SLorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eius consequatur porro quo nesciunt dicta provident sed expedita blanditiis illum!</p>
+              <a href="#" class="btn btn-danger">Browse Gallery</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/img-11.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1">One more for good measure</h5>
+              <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eius consequatur porro quo nesciunt dicta provident sed expedita blanditiis illum!</p>
+              <a href="#" class="btn btn-danger">Browse Gallery</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <div class="container mx-auto d-flex justify-content-around my-5">
+
+        <div class="card text-center" style="width: 18rem;">
+            <img src="imgs/html.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Heading</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, iure officiis. Vitae aliquid alias numquam.</p>
+              <a href="#" class="btn btn-primary">Viwe Details</a>
+            </div>
+          </div>
+
+          <div class="card text-center" style="width: 18rem;">
+            <img src="imgs/css.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Heading</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, iure officiis. Vitae aliquid alias numquam.</p>
+              <a href="#" class="btn btn-primary">Viwe Details</a>
+            </div>
+          </div>
+
+          <div class="card text-center" style="width: 18rem;">
+            <img src="imgs/js.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Heading</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, iure officiis. Vitae aliquid alias numquam.</p>
+              <a href="#" class="btn btn-primary">Viwe Details</a>
+            </div>
+          </div>
+        </div>
+        
+        <hr>
+
+      <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-fluid mx-auto" alt="600x400" style="width: 600px; height: 400px;" src="imgs/img-3.jpg" data-holder-rendered="true">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img class="featurette-image img-fluid mx-auto" alt="600x400" style="width: 600px; height: 400px;" src="imgs/img-4.jpg" data-holder-rendered="true">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-fluid mx-auto" alt="500x500" style="width: 600px; height: 400px;" src="imgs/img-5.jpg" data-holder-rendered="true">
+            </div>
+          </div>
+          <hr>
+      </div>
+
+      <footer class="container d-flex justify-content-between">
+          <p>© 2024-2025 Company, Inc. · <a href="#" class="text-decoration-none">Privacy</a> · <a href="#" class="text-decoration-none">Terms</a></p>
+          <p class="float-right"><a href="#" class="text-decoration-none">Back to top</a></p>
+      </footer>
+      
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
